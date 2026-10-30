@@ -1,5 +1,6 @@
 function arabicToRoman(number) {
     const symbols = [
+        [1000, "M"],
         [900, "CM"],
         [500, "D"],
         [400, "CD"],
