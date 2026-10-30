@@ -35,3 +35,7 @@ QUnit.test("50 -> L", function (assert) {
 QUnit.test("90 -> XC", function (assert) {
     assert.strictEqual(arabicToRoman(90), "XC");
 });
+
+QUnit.test("100 -> C", function (assert) {
+    assert.strictEqual(arabicToRoman(100), "C");
+});
