@@ -7,3 +7,7 @@ QUnit.test("1 -> I", function (assert) {
 QUnit.test("2 -> II", function (assert) {
     assert.strictEqual(arabicToRoman(2), "II");
 });
+
+QUnit.test("4 -> IV", function (assert) {
+    assert.strictEqual(arabicToRoman(4), "IV");
+});
