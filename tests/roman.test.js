@@ -43,3 +43,7 @@ QUnit.test("100 -> C", function (assert) {
 QUnit.test("400 -> CD", function (assert) {
     assert.strictEqual(arabicToRoman(400), "CD");
 });
+
+QUnit.test("500 -> D", function (assert) {
+    assert.strictEqual(arabicToRoman(500), "D");
+});
