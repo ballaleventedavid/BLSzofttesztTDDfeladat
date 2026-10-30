@@ -1,3 +1,3 @@
 function arabicToRoman(number) {
-    return "I";
+    return "I".repeat(number);
 }
