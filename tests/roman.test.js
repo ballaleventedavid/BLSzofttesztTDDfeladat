@@ -61,3 +61,61 @@ QUnit.test("0 -> hiba", function (assert) {
         arabicToRoman(0);
     }, RangeError);
 });
+
+QUnit.test("3 -> III", function (assert) {
+    assert.strictEqual(arabicToRoman(3), "III");
+});
+
+QUnit.test("6 -> VI", function (assert) {
+    assert.strictEqual(arabicToRoman(6), "VI");
+});
+
+QUnit.test("14 -> XIV", function (assert) {
+    assert.strictEqual(arabicToRoman(14), "XIV");
+});
+
+QUnit.test("49 -> XLIX", function (assert) {
+    assert.strictEqual(arabicToRoman(49), "XLIX");
+});
+
+QUnit.test("99 -> XCIX", function (assert) {
+    assert.strictEqual(arabicToRoman(99), "XCIX");
+});
+
+QUnit.test("1987 -> MCMLXXXVII", function (assert) {
+    assert.strictEqual(arabicToRoman(1987), "MCMLXXXVII");
+});
+
+QUnit.test("2026 -> MMXXVI", function (assert) {
+    assert.strictEqual(arabicToRoman(2026), "MMXXVI");
+});
+
+QUnit.test("3999 -> MMMCMXCIX", function (assert) {
+    assert.strictEqual(arabicToRoman(3999), "MMMCMXCIX");
+});
+
+QUnit.test("58 -> LVIII", function (assert) {
+    assert.strictEqual(arabicToRoman(58), "LVIII");
+});
+
+QUnit.test("1994 -> MCMXCIV", function (assert) {
+    assert.strictEqual(arabicToRoman(1994), "MCMXCIV");
+});
+
+QUnit.test("-1 -> hiba", function (assert) {
+    assert.throws(function () {
+        arabicToRoman(-1);
+    }, RangeError);
+});
+
+QUnit.test("4000 -> hiba", function (assert) {
+    assert.throws(function () {
+        arabicToRoman(4000);
+    }, RangeError);
+});
+
+QUnit.test("1.5 -> hiba", function (assert) {
+    assert.throws(function () {
+        arabicToRoman(1.5);
+    }, RangeError);
+});
