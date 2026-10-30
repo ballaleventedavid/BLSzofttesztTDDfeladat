@@ -55,3 +55,9 @@ QUnit.test("900 -> CM", function (assert) {
 QUnit.test("1000 -> M", function (assert) {
     assert.strictEqual(arabicToRoman(1000), "M");
 });
+
+QUnit.test("0 -> hiba", function (assert) {
+    assert.throws(function () {
+        arabicToRoman(0);
+    }, RangeError);
+});
